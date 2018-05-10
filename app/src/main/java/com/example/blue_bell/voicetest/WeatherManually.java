@@ -108,15 +108,13 @@ public class WeatherManually extends Activity implements View.OnClickListener,Co
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.weather);
+        setContentView(R.layout.weather_manually);
 
         mLatitudeLabel = "緯度";
         mLongitudeLabel = "經度";
         SelectCityBtn = (ImageView)findViewById(R.id.title_city_manager);
         SelectCityBtn.setOnClickListener(this);
         initView();
-
-
 
         buildGoogleApiClient();
 
@@ -378,11 +376,7 @@ public class WeatherManually extends Activity implements View.OnClickListener,Co
         rainfullT = (TextView) findViewById(R.id.rainfall);
         statusT = (TextView) findViewById(R.id.status);
 
-        cityT.setText("N/A");
-        timeT.setText("N/A");
-        temperatureT.setText("N/A");
-        rainfullT.setText("N/A");
-        statusT.setText("N/A");
+        temperatureT.setText("請稍後");
 
         cityT_2 = (TextView) findViewById(R.id.title_city_name_2);
         timeT_2 = (TextView) findViewById(R.id.time_2);
@@ -390,11 +384,6 @@ public class WeatherManually extends Activity implements View.OnClickListener,Co
         rainfullT_2 = (TextView) findViewById(R.id.rainfall_2);
         statusT_2 = (TextView) findViewById(R.id.status_2);
 
-        cityT_2.setText("N/A");
-        timeT_2.setText("N/A");
-        temperatureT_2.setText("N/A");
-        rainfullT_2.setText("N/A");
-        statusT_2.setText("N/A");
     }
     void updateTodayWeather(TodayWeather todayWeather)
     {
@@ -495,79 +484,100 @@ public class WeatherManually extends Activity implements View.OnClickListener,Co
     private void parseJSON(String s) {
         try {
             JSONObject jsonObject = new JSONObject(s);
-            JSONArray array = jsonObject.getJSONArray("results");
-            JSONObject jsonObject1 = array.getJSONObject(0);
-            JSONArray array1 = jsonObject1.getJSONArray("address_components");
-            JSONObject jsonObject3 = array1.getJSONObject(4);
-            String city = jsonObject3.getString("long_name");
-            cityT.setText(city);
-            if(cityT.getText().equals("基隆市")){
+            JSONObject job = jsonObject.getJSONArray("results").getJSONObject(0);
+
+            String county = job.getString("formatted_address");
+
+            if(county.contains("基隆市")){
                 getWeatherDatafromNet("03");
-            }else if (cityT.getText().equals("臺北市"))
+                cityT.setText("基隆市");
+            }else if (county.equals("臺北市"))
             {
                 getWeatherDatafromNet("01");
-            }else if (cityT.getText().equals("新北市"))
+                cityT.setText("臺北市");
+            }else if (county.contains("新北市"))
             {
                 getWeatherDatafromNet("04");
-            }else if (cityT.getText().equals("桃園市"))
+                cityT.setText("新北市");
+            }else if (county.contains("桃園市"))
             {
                 getWeatherDatafromNet("05");
-            }else if (cityT.getText().equals("新竹市"))
+                cityT.setText("桃園市");
+
+            }else if (county.contains("新竹市"))
             {
                 getWeatherDatafromNet("14");
-            }else if (cityT.getText().equals("新竹縣"))
+                cityT.setText("新竹市");
+            }else if (county.contains("新竹縣"))
             {
                 getWeatherDatafromNet("06");
-            }else if (cityT.getText().equals("宜蘭縣"))
+                cityT.setText("新竹縣");
+            }else if (county.contains("宜蘭縣"))
             {
                 getWeatherDatafromNet("17");
-            }else if (cityT.getText().equals("苗栗縣"))
+                cityT.setText("宜蘭縣");
+            }else if (county.contains("苗栗縣"))
             {
                 getWeatherDatafromNet("07");
-            }else if (cityT.getText().equals("臺中市"))
+                cityT.setText("苗栗縣");
+            }else if (county.contains("臺中市"))
             {
                 getWeatherDatafromNet("08");
-            }else if (cityT.getText().equals("彰化縣"))
+                cityT.setText("臺中市");
+            }else if (county.contains("彰化縣"))
             {
                 getWeatherDatafromNet("09");
-            }else if (cityT.getText().equals("南投縣"))
+                cityT.setText("彰化縣");
+            }else if (county.contains("南投縣"))
             {
                 getWeatherDatafromNet("10");
-            }else if (cityT.getText().equals("雲林縣"))
+                cityT.setText("南投縣");
+            }else if (county.contains("雲林縣"))
             {
                 getWeatherDatafromNet("11");
-            }else if (cityT.getText().equals("嘉義市"))
+                cityT.setText("雲林縣");
+            }else if (county.contains("嘉義市"))
             {
                 getWeatherDatafromNet("16");
-            }else if (cityT.getText().equals("嘉義縣"))
+                cityT.setText("嘉義市");
+            }else if (county.contains("嘉義縣"))
             {
                 getWeatherDatafromNet("12");
-            }else if (cityT.getText().equals("臺南市"))
+                cityT.setText("嘉義縣");
+            }else if (county.contains("臺南市"))
             {
                 getWeatherDatafromNet("13");
-            }else if (cityT.getText().equals("高雄市"))
+                cityT.setText("臺南市");
+            }else if (county.contains("高雄市"))
             {
                 getWeatherDatafromNet("02");
-            }else if (cityT.getText().equals("屏東縣"))
+                cityT.setText("高雄市");
+            }else if (county.contains("屏東縣"))
             {
                 getWeatherDatafromNet("15");
-            }else if (cityT.getText().equals("澎湖縣"))
+                cityT.setText("屏東縣");
+            }else if (county.contains("澎湖縣"))
             {
                 getWeatherDatafromNet("20");
-            }else if (cityT.getText().equals("花蓮縣"))
+                cityT.setText("澎湖縣");
+            }else if (county.contains("花蓮縣"))
             {
                 getWeatherDatafromNet("18");
-            }else if (cityT.getText().equals("臺東縣"))
+                cityT.setText("花蓮縣");
+            }else if (county.contains("臺東縣"))
             {
                 getWeatherDatafromNet("19");
-            }else if (cityT.getText().equals("金門縣"))
+                cityT.setText("臺東縣");
+            }else if (county.contains("金門縣"))
             {
                 getWeatherDatafromNet("21");
-            }else if (cityT.getText().equals("連江縣")) {
+                cityT.setText("金門縣");
+            }else if (county.contains("連江縣")) {
                 getWeatherDatafromNet("22");
+                cityT.setText("連江縣");
             }
             else
-                Log.d("TAG", "city:" + city);
+                Toast.makeText(this, "無法取得位置", Toast.LENGTH_SHORT).show();
         }
 
         catch(JSONException e) {

@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View arg0) {
                 Intent intent = new Intent(MainActivity.this, WeatherManually.class);
-                startService(intent);
+                startActivity(intent);
             }
         });
     }

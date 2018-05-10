@@ -155,9 +155,17 @@ public class SelectCity extends Activity implements View.OnClickListener {
                     city.setText("當前城市:連江縣");
                     cityname = text;
                 }
+                Intent intent = new Intent(SelectCity.this,WeatherManually.class);
+                if(updatecitycode!="-1") {
+                    intent.putExtra("citycode", updatecitycode);
+                    intent.putExtra("city", cityname);
+                }
+                startActivity(intent);
+                finish();
             }
         };
         cityListLv.setOnItemClickListener(itemClickListener);
+
     }
     //把citycode值傳到MainActivity
     @Override
@@ -165,16 +173,11 @@ public class SelectCity extends Activity implements View.OnClickListener {
         switch (v.getId())
         {
             case R.id.title_selectCity_back:
-                // finish();
-                Intent intent = new Intent(this,MainActivity.class);
-                if(updatecitycode!="-1") {
-                    intent.putExtra("citycode", updatecitycode);
-                    intent.putExtra("city", cityname);
-                }
-                startActivity(intent);
+                finish();
                 break;
             default:
                 break;
         }
     }
+
 }

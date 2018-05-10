@@ -74,14 +74,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="基隆市"
+                android:text=""
                 android:textColor="#FFFFFF"
                 android:textSize="50.0sp" />
             <TextView
                 android:id="@+id/time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="(今晚至明晨)"
+                android:text=""
                 android:textColor="#FFFFFF"
                 android:textSize="15.0sp"/>
             <TextView
@@ -91,14 +91,14 @@
                 android:id="@+id/temperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="溫度:16~19℃"
+                android:text="請稍後..."
                 android:textColor="#FFFFFF"
                 android:textSize="30.0sp"/>
             <TextView
                 android:id="@+id/rainfall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="降雨機率:0%"
+                android:text=""
                 android:textColor="#FFFFFF"
                 android:textSize="30.0sp"/>
             <TextView
@@ -111,7 +111,7 @@
                 android:id="@+id/status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="晴時多雲"
+                android:text=""
                 android:textColor="#FFFFFF"
                 android:textSize="20.0sp"/>
         </LinearLayout>
@@ -135,14 +135,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="N/A"
+                android:text=""
                 android:textColor="#FFFFFF"
                 android:textSize="50.0sp" />
             <TextView
                 android:id="@+id/time_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="N/A"
+                android:text=""
                 android:textColor="#FFFFFF"
                 android:textSize="15.0sp"/>
             <TextView
@@ -152,14 +152,14 @@
                 android:id="@+id/temperature_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="N/A"
+                android:text="請稍後..."
                 android:textColor="#FFFFFF"
                 android:textSize="30.0sp"/>
             <TextView
                 android:id="@+id/rainfall_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="N/A"
+                android:text=""
                 android:textColor="#FFFFFF"
                 android:textSize="30.0sp"/>
             <TextView
@@ -172,7 +172,7 @@
                 android:id="@+id/status_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="N/A"
+                android:text=""
                 android:textColor="#FFFFFF"
                 android:textSize="20.0sp"/>
         </LinearLayout>

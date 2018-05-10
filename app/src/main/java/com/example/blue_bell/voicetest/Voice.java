@@ -47,7 +47,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "03";
                     cityname = "基隆市";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -55,7 +55,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "01";
                     cityname = "臺北市";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -71,7 +71,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "05";
                     cityname = "桃園市";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -79,7 +79,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "14";
                     cityname = "新竹市";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -87,7 +87,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "06";
                     cityname = "新竹縣";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -95,7 +95,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "17";
                     cityname = "宜蘭縣";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -103,7 +103,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "07";
                     cityname = "苗栗縣";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -111,7 +111,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "08";
                     cityname = "臺中市";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -119,7 +119,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "09";
                     cityname = "彰化縣";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -127,7 +127,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "10";
                     cityname = "南投縣";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -135,7 +135,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "11";
                     cityname = "雲林縣";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -143,7 +143,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "16";
                     cityname = "嘉義市";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -151,7 +151,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "12";
                     cityname = "嘉義縣";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -159,7 +159,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "13";
                     cityname = "臺南市";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -167,7 +167,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "02";
                     cityname = "高雄市";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -175,7 +175,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "15";
                     cityname = "屏東縣";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -183,7 +183,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "20";
                     cityname = "澎湖縣";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -191,7 +191,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "18";
                     cityname = "花蓮縣";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -199,7 +199,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "19";
                     cityname = "臺東縣";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -207,7 +207,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "21";
                     cityname = "金門縣";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);
@@ -215,7 +215,7 @@ public class Voice extends Activity {
                 {
                     updatecitycode = "22";
                     cityname = "連江縣";
-                    Intent intent = new Intent(this,Weather.class);
+                    Intent intent = new Intent(this,WeatherManually.class);
                     intent.putExtra("citycode",updatecitycode);
                     intent.putExtra("city",cityname);
                     startActivity(intent);

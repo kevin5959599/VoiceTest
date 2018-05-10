@@ -22,6 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".WeatherManually"/>
         <activity android:name=".Voice" android:theme="@style/Theme.Transparent"></activity>
         <activity android:name=".Weather"></activity>
         <activity android:name=".SelectCity"></activity>
