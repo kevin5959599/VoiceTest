@@ -376,7 +376,7 @@ public class WeatherManually extends Activity implements View.OnClickListener,Co
         rainfullT = (TextView) findViewById(R.id.rainfall);
         statusT = (TextView) findViewById(R.id.status);
 
-        temperatureT.setText("請稍後");
+        temperatureT.setText("請稍後...");
 
         cityT_2 = (TextView) findViewById(R.id.title_city_name_2);
         timeT_2 = (TextView) findViewById(R.id.time_2);
