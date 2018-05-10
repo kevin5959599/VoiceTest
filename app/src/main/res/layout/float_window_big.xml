@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/big_window_layout"
+    android:layout_width="200dip"
+    android:layout_height="200dip"
+    android:background="@drawable/bg_big"
+    android:orientation="vertical"
+    >
+    <Button
+        android:id="@+id/close"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dip"
+        android:text="關閉"
+        />
+    <Button
+        android:id="@+id/open"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:text="語音"/>
+    <Button
+        android:id="@+id/back"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:text="返回"
+        />
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="250dip"
+        />
+</LinearLayout>
